@@ -3,7 +3,7 @@ import PasswordGenerator from "./components/PasswordGenerator";
 
 function App() {
   return (
-    <div>
+    <div className=" max-sm:px-[10px]">
       <PasswordGenerator />
     </div>
   );

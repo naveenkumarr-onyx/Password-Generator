@@ -50,7 +50,7 @@ const PasswordGenerator = () => {
           copy
         </button>
       </div>
-      <div className="flex text-sm gap-x-2">
+      <div className="flex text-sm gap-x-2 max-sm:gap-x-1  items-center">
         <div className=" flex gap-1 mr-2">
           <input
             type="range"
@@ -62,7 +62,7 @@ const PasswordGenerator = () => {
           />
           <label htmlFor="length">Length:{length}</label>
         </div>
-        <div className=" flex items-center  bg-red-600">
+        <div className=" flex items-center gap-0.5">
           <input
             type="checkbox"
             defaultChecked={numberAllowed}
@@ -72,7 +72,7 @@ const PasswordGenerator = () => {
           />
           <label htmlFor="character">Number</label>
         </div>
-        <div className=" flex items-center">
+        <div className=" flex items-center gap-0.5">
           <input
             type="checkbox"
             defaultChecked={charAllowed}
@@ -80,7 +80,7 @@ const PasswordGenerator = () => {
               setCharAllowed((prev) => !prev);
             }}
           />
-          <label htmlFor="character">character</label>
+          <label htmlFor="character">Character</label>
         </div>
       </div>
     </div>
