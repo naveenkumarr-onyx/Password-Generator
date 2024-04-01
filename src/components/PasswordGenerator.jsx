@@ -22,6 +22,7 @@ const PasswordGenerator = () => {
 
   useEffect(() => {
     Generatorpassword();
+    console.log(length);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length, numberAllowed, charAllowed]);
   function copyToClipboard() {
