@@ -9,8 +9,8 @@ const PasswordGenerator = () => {
 
   const Generatorpassword = useCallback(() => {
     var pass = "";
-    var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz";
-    if (charAllowed) str += "!@#$%^&*()_+|?></";
+    var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    if (charAllowed) str += "!@#$%^&*()_+|?</>";
     if (numberAllowed) str += "0123456789";
 
     for (var i = 1; i < length; i++) {
@@ -21,9 +21,7 @@ const PasswordGenerator = () => {
   }, [length, numberAllowed, charAllowed]);
 
   useEffect(() => {
-    console.log("beforeGenerator");
     Generatorpassword();
-    console.log("afterGenerator");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length, numberAllowed, charAllowed]);
   function copyToClipboard() {
